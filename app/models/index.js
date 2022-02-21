@@ -6,10 +6,7 @@ const sequelize = new Sequelize(dbConfig.DATABASE_URL, {
 //   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
   dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    }
+    ssl: true
   },
 
   pool: {
