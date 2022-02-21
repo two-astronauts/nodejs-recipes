@@ -5,12 +5,12 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DATABASE_URL, {
 //   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
-//   dialectOptions: {
-//     ssl: {
-//       require: true,
-//       rejectUnauthorized: false
-//     }
-//   },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  },
 
   pool: {
     max: dbConfig.pool.max,
