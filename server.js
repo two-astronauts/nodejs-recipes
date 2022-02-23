@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:4200"
+  origin: ["http://localhost:4200", "https://angular-recipes-web.herokuapp.com"]
 };
 
 app.use(cors(corsOptions));
